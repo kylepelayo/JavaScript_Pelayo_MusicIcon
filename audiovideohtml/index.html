@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample JavaScript Activity</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            min-height: 100vh;       
+            background-color: #2b0000; 
+            color: #ffffff;            
+            font-family: Arial, sans-serif;
+        }
+
+        .center-wrapper {
+            display: flex;
+            flex-direction: column;  
+            align-items: center;     
+            text-align: center;      
+        }
+
+        #text-underline {
+            color: #cccccc; 
+        }
+
+        .table { 
+             background-color: #1a0000; 
+             color: white; 
+             border-color: #4a0000;
+             border-collapse: collapse;
+        }
+        
+        .table th, .table td {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-wrapper">
+        <p id="text-color-red">Joji</p>
+        <p id="text-underline">Makes the best Music</p>
+        
+        <video width="1000" height="500" controls>
+            <source src="sanctuary.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        
+        <audio controls>
+            <source src="sanctuary.mp4" type="audio/mpeg">
+        </audio>
+        <br>
+        
+        <table border="1" class="table">
+            <thead>
+                <tr>
+                    <th> No.</th>
+                    <th> Artist </th>
+                    <th> Album </th>
+                    <th> Song </th>
+                    <th> Play </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 </td>
+                    <td> Joji </td>
+                    <td> Nectar </td>
+                    <td> Afterthought </td>
+                    <td>
+                        <audio controls>
+                            <source src="afterthought.mp4" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        alert("Hello World");
+        document.getElementById("text-color-red").style.color = "#ff3333"; 
+        document.getElementById("text-underline").style.textDecoration = "underline";
+    </script>
+
+</body>
+</html>
